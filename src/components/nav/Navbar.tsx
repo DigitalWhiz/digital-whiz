@@ -52,21 +52,21 @@ export default function NavbarClient() {
           </li>
           <li>
             <Link
-              href="#servicios"
+              href="/#servicios"
               className="py-2 px-4 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
               Nuestros Servicios
             </Link>
           </li>
           <li>
             <Link
-              href="#contactanos"
+              href="/#contactanos"
               className="py-2 px-4 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
               Contactanos
             </Link>
           </li>
           <li>
             <Link
-              href="#sobreNosotros"
+              href="/#sobreNosotros"
               className="py-2 px-4 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
               Sobre Nosotros
             </Link>

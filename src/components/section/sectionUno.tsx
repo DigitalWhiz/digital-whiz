@@ -5,7 +5,7 @@ export default function SectionUno() {
     <section className="relative w-full h-screen flex items-center justify-center py-16 md:py-0">
       <div className="relative w-full h-full flex items-center justify-center">
         <div className="relative w-full h-full lg:justify-end">
-          <div className="block lg:hidden  relative w-full h-full">
+          <div className="block lg:hidden relative w-full h-full">
             <Image
               src="/img/DiseñoResponsive.png"
               alt="fondo mobile"
@@ -25,9 +25,9 @@ export default function SectionUno() {
           </div>
         </div>
 
-        <div className="absolute top-16 left-12 p-8 sm:top-8 sm:left-4 sm:p-4">
+        <div className="absolute top-0 left-12 p-8 sm:top-4 sm:left-4 sm:p-4">
           <h1
-            className="text-6xl sm:text-8xl font-extrabold text-[#C327E9] p-2 inline-block"
+            className="text-7xl sm:text-8xl font-extrabold text-[#C327E9] p-2 inline-block"
             style={{ textShadow: "15px 5px 5px rgba(0,0,0,0.8)" }}>
             DIGITAL <br /> WHIZ
           </h1>

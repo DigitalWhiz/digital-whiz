@@ -5,16 +5,23 @@ import Image from "next/image";
 export default function SectionTres() {
   return (
     <section
-    id="#bienvenidos" 
-    className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+      id="#bienvenidos" 
+      className="relative w-full h-screen flex items-center justify-center overflow-hidden">
       <div className="relative w-full h-full flex items-center justify-center">
         <div className="relative w-full h-full">
           <Image
-            src="/img/sectionTres1.png"
-            alt="fondo1"
+            src="/img/sectionTres1.png" 
+            alt="fondoMundo"
             fill
             style={{ objectFit: "cover" }}
-            className="rounded shadow-xl"
+            className="rounded shadow-xl hidden md:block" 
+          />
+          <Image
+            src="/img/sectionTresResponsive.png" 
+            alt="fondoMundoResponsive"
+            fill
+            style={{ objectFit: "cover" }}
+            className="rounded shadow-xl md:hidden" 
           />
         </div>
 

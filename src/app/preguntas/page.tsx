@@ -44,7 +44,7 @@ const PreguntasFrecuentes: React.FC = () => {
             Preguntas Frecuentes
           </h1>
           <p className="text-lg text-center mb-12">
-            Encuentra respuestas a las preguntas más comunes sobre cómo trabajamos y desarrollamos nuestros eventos en Dogo Producciones.
+            Encuentra respuestas a las preguntas más comunes de nuestros clientes. 
           </p>
           <div className="space-y-4">
             {faqData.map((faq, index) => (

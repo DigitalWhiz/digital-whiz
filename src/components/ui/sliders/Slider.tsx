@@ -16,9 +16,7 @@ const desktopSlides: Slide[] = [
   { id: 2, imageUrl: '/img/4.png', title: 'Sitios Web', description: 'Diseño y funcionalidad al servicio de tu marca' },
   { id: 3, imageUrl: '/img/2.png', title: 'Campañas Publicitarias (ADS)', description: 'Maximiza tu alcance con campañas efectivas' },
   { id: 4, imageUrl: '/img/5.png', title: 'Identidad de Marca', description: 'Construimos una imagen coherente y atractiva' },
-  // { id: 5, imageUrl: '/img/NSS6.png', title: 'Email Marketing', description: 'Fideliza y convierte con mensajes precisos' },
   { id: 6, imageUrl: '/img/6.png', title: 'E-commerce', description: 'Optimiza tu tienda online para más ventas' },
-  // Agrega más imágenes según sea necesario
 ];
 
 const mobileSlides: Slide[] = [
@@ -26,9 +24,7 @@ const mobileSlides: Slide[] = [
   { id: 2, imageUrl: '/img/SliderMobile2.png', title: 'Sitios Web', description: 'Diseño y funcionalidad al servicio de tu marca' },
   { id: 3, imageUrl: '/img/SliderMobile3.png', title: 'Campañas Publicitarias (ADS)', description: 'Maximiza tu alcance con campañas efectivas' },
   { id: 4, imageUrl: '/img/SliderMobile4.png', title: 'Identidad de Marca', description: 'Construimos una imagen coherente y atractiva' },
-  // { id: 5, imageUrl: '/img/NSS10.png', title: 'Email Marketing', description: 'Fideliza y convierte con mensajes precisos' },
   { id: 6, imageUrl: '/img/SliderMobile6.png', title: 'E-commerce', description: 'Optimiza tu tienda online para más ventas' },
-  // Agrega más imágenes según sea necesario
 ];
 
 const Slider: React.FC = () => {
@@ -44,7 +40,7 @@ const Slider: React.FC = () => {
       }
     };
 
-    handleResize(); // Call the function to set initial state
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -85,7 +81,7 @@ const Slider: React.FC = () => {
               <div className="absolute inset-x-0 top-1/4 flex flex-col justify-center items-start p-10 pl-24 bg-black bg-opacity-60 text-white rounded-lg">
                 <h2 className="text-3xl font-bold mb-2">{slide.title}</h2>
                 <p className="text-lg">{slide.description}</p>
-                <button className="mt-4 px-4 py-2 bg-blue-500 rounded">Ver más</button>
+                <a href="https://wa.me/message/XWKCRXJ2NSCII1" target="_blank" className="mt-4 px-4 py-2 bg-blue-500 rounded">Consultar</a>
               </div>
             </div>
           ))}

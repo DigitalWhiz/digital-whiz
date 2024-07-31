@@ -24,7 +24,7 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
     <>
       <div
         className={cn(
-          "fixed left-0 top-0 w-[50%] sm:w-[30%] h-screen z-50 bg-black flex items-center justify-center transition-all duration-300 ease-in-out",
+          "fixed left-0 top-0 w-[75%] sm:w-[50%] h-screen z-50 bg-black flex items-center justify-center transition-all duration-300 ease-in-out",
           !isOpen ? "-left-full" : "left-0"
         )}
       >
@@ -45,11 +45,11 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
               ></path>
             </svg>
           </button>
-          <ul className="flex flex-col items-center gap-4">
+          <ul className="flex flex-col items-center gap-2">
             <li>
               <Link
                 href="/"
-                className="py-2 px-4 border-b-2 text-gray-400 border-primary transition-colors duration-300"
+                className="block w-full py-3 px-4 text-gray-400 border-b border-primary text-center transition-colors duration-300"
                 onClick={onClose}
               >
                 Inicio
@@ -57,8 +57,8 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
             </li>
             <li>
               <Link
-                href="#servicios"
-                className="py-2 px-4 border-b-2 text-gray-400 border-transparent hover:border-accent transition-colors duration-300"
+                href="/#servicios"
+                className="block w-full py-3 px-4 text-gray-400 border-b border-transparent hover:border-accent text-center transition-colors duration-300"
                 onClick={onClose}
               >
                 Nuestros Servicios
@@ -66,8 +66,8 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
             </li>
             <li>
               <Link
-                href="#contactanos"
-                className="py-2 px-4 border-b-2 text-gray-400 border-transparent hover:border-accent transition-colors duration-300"
+                href="/#contactanos"
+                className="block w-full py-3 px-4 text-gray-400 border-b border-transparent hover:border-accent text-center transition-colors duration-300"
                 onClick={onClose}
               >
                 Contactanos
@@ -75,8 +75,8 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
             </li>
             <li>
               <Link
-                href="#sobreNosotros"
-                className="py-2 px-4 border-b-2 text-gray-400 border-transparent hover:border-accent transition-colors duration-300"
+                href="/#sobreNosotros"
+                className="block w-full py-3 px-4 text-gray-400 border-b border-transparent hover:border-accent text-center transition-colors duration-300"
                 onClick={onClose}
               >
                 Sobre Nosotros
@@ -84,8 +84,8 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
             </li>
             <li>
               <Link
-                href="/preguntasFrec/preguntasFrecuentes"
-                className="py-2 px-4 border-b-2 text-gray-400 border-transparent hover:border-accent transition-colors duration-300"
+                href="/preguntas"
+                className="block w-full py-3 px-4 text-gray-400 border-b border-transparent hover:border-accent text-center transition-colors duration-300"
                 onClick={onClose}
               >
                 Preguntas Frecuentes
@@ -93,7 +93,7 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
             </li>
             
             {session?.user ? (
-              <div className="relative flex flex-col items-center">
+              <div className="relative flex flex-col items-center mt-4">
                 <button onClick={toggleUserMenu} className="flex items-center gap-2">
                   {session.user.image ? (
                     <Avatar
@@ -146,7 +146,7 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
                 <li>
                   <Link
                     href="/login"
-                    className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 text-white shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none mt-4 rounded bg-gradient-to-r from-[#F64994] to-[#FC78F4]"
+                    className="block w-full py-3 px-6 text-white bg-gradient-to-r from-[#F64994] to-[#FC78F4] rounded text-center shadow-md transition-all mt-4"
                     onClick={onClose}
                   >
                     Iniciar Sesión
@@ -155,7 +155,7 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
                 <li>
                   <Link
                     href="/register"
-                    className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 text-white shadow-md shadow-blue-500/20 hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none mt-4 rounded bg-gradient-to-r from-[#F64994] to-[#FC78F4]"
+                    className="block w-full py-3 px-6 text-white bg-gradient-to-r from-[#F64994] to-[#FC78F4] rounded text-center shadow-md transition-all mt-4"
                     onClick={onClose}
                   >
                     Registrarse
