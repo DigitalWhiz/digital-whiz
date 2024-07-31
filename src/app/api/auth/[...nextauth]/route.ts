@@ -1,66 +1,66 @@
-// import { connectDB } from "@/libs/mongodb";
-// import User from "@/models/user";
-// import NextAuth from "next-auth";
-// import CredentialsProvider from "next-auth/providers/credentials";
-// import bcrypt from "bcryptjs";
+import { connectDB } from "@/libs/mongodb";
+import User from "@/models/user";
+import NextAuth from "next-auth";
+import CredentialsProvider from "next-auth/providers/credentials";
+import bcrypt from "bcryptjs";
 
-// const handler = NextAuth({
-//   providers: [
-//     CredentialsProvider({
-//       name: "Credentials",
-//       id: "credentials",
-//       credentials: {
-//         email: { label: "Email", type: "text", placeholder: "ejemplo@gmail.com" },
-//         password: { label: "Password", type: "password", placeholder: "********" },
-//       },
-//       async authorize(credentials) {
-//         await connectDB();
-//         const userFound = await User.findOne({
-//           email: credentials?.email,
-//         }).select("+password");
+const handler = NextAuth({
+  providers: [
+    CredentialsProvider({
+      name: "Credentials",
+      id: "credentials",
+      credentials: {
+        email: { label: "Email", type: "text", placeholder: "ejemplo@gmail.com" },
+        password: { label: "Password", type: "password", placeholder: "********" },
+      },
+      async authorize(credentials) {
+        await connectDB();
+        const userFound = await User.findOne({
+          email: credentials?.email,
+        }).select("+password");
 
-//         if (!userFound) throw new Error("Credenciales Invalidas");
+        if (!userFound) throw new Error("Credenciales Invalidas");
 
-//         const passwordMatch = await bcrypt.compare(
-//           credentials!.password,
-//           userFound.password
-//         );
+        const passwordMatch = await bcrypt.compare(
+          credentials!.password,
+          userFound.password
+        );
 
-//         if (!passwordMatch) throw new Error("Credenciales invalidas");
+        if (!passwordMatch) throw new Error("Credenciales invalidas");
 
-//         console.log(userFound);
+        console.log(userFound);
 
-//         return userFound;
-//       },
-//     }),
-//   ],
-//   pages: {
-//     signIn: "/login",
-//   },
-//   session: {
-//     strategy: "jwt",
-//   },
-//   callbacks: {
-//     async jwt({ account,token, user }) {
-//       console.log('JWT callback:', {account, token, user});
-//       if (account) {
-//         token.accessToken = account.access_token;
-//       }
-//       if (user) {
-//         token.user = user;
-//       }
-//       return token;
-//     },
-//     async session({ session, token }) {
-//       console.log("Session Callback:", { session, token });
-//       session.user = token.user as any;
-//       return session;
-//     },
-//   },
-//   jwt: {
-//     secret: process.env.NEXTAUTH_SECRET,
-//   },
-//   secret: process.env.NEXTAUTH_SECRET,
-// });
+        return userFound;
+      },
+    }),
+  ],
+  pages: {
+    signIn: "/login",
+  },
+  session: {
+    strategy: "jwt",
+  },
+  callbacks: {
+    async jwt({ account,token, user }) {
+      console.log('JWT callback:', {account, token, user});
+      if (account) {
+        token.accessToken = account.access_token;
+      }
+      if (user) {
+        token.user = user;
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      console.log("Session Callback:", { session, token });
+      session.user = token.user as any;
+      return session;
+    },
+  },
+  jwt: {
+    secret: process.env.NEXTAUTH_SECRET,
+  },
+  secret: process.env.NEXTAUTH_SECRET,
+});
 
-// export { handler as GET, handler as POST };
+export { handler as GET, handler as POST };
