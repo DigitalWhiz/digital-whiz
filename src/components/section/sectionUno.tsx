@@ -27,7 +27,7 @@ export default function SectionUno() {
 
         <div className="absolute top-0 left-12 p-8 sm:top-4 sm:left-4 sm:p-4">
           <h1
-            className="text-7xl sm:text-8xl font-extrabold text-[#C327E9] p-2 inline-block"
+            className="text-7xl sm:text-8xl font-extrabold text-[#C327E9] inline-block"
             style={{ textShadow: "15px 5px 5px rgba(0,0,0,0.8)" }}>
             DIGITAL <br /> WHIZ
           </h1>
