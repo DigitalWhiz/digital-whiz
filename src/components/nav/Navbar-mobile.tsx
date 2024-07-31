@@ -92,7 +92,7 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
               </Link>
             </li>
             
-            {session?.user ? (
+            {/* {session?.user ? (
               <div className="relative flex flex-col items-center mt-4">
                 <button onClick={toggleUserMenu} className="flex items-center gap-2">
                   {session.user.image ? (
@@ -162,7 +162,7 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
                   </Link>
                 </li>
               </>
-            )}
+            )} */}
           </ul>
         </div>
       </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SectionUno() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center py-16 md:py-0">
+    <section className="relative w-full h-screen flex items-center justify-center mt-24 py-24 md:py-0">
       <div className="relative w-full h-full flex items-center justify-center">
         <div className="relative w-full h-full lg:justify-end">
           <div className="block lg:hidden relative w-full h-full">

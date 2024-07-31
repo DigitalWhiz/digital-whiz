@@ -30,12 +30,14 @@ export default function SectionCuatro() {
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
           <h2
-            className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-extrabold text-white p-2"
+            className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-extrabold text-white p-10"
             data-aos="fade-right"
             style={{ textShadow: "8px 5px 5px rgba(0,0,0,0.8)" }}>
             SOBRE NOSOTROS
           </h2>
-          <p className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl font-light text-white p-2 max-w-4xl">
+          <p
+            className="text-sm sm:text-base md:text-lg lg:text-lg xl:text-xl font-light text-white p-2 max-w-4xl"
+            style={{ textShadow: "8px 5px 5px rgba(0,0,0,0.8)" }}>
             Bienvenido a nuestro mundo digital, que también puede ser el tuyo.{" "}
             <br />
             Si estás comenzando en este ámbito, has llegado al lugar indicado
@@ -46,8 +48,8 @@ export default function SectionCuatro() {
             de tu público. <br />
             Nuestro equipo está compuesto por especialistas en cada área, listos
             para ayudarte a potenciar tu negocio. <br /> Te asesoramos y guiamos
-            en cada paso de tu camino en este nuevo mundo digital. <br /> <strong> ¡HAZ
-            CRECER TU EMPRESA CON NOSOTROS!📈</strong>
+            en cada paso de tu camino en este nuevo mundo digital. <br />{" "}
+            <strong> ¡HAZ CRECER TU EMPRESA CON NOSOTROS!📈</strong>
           </p>
         </div>
       </div>

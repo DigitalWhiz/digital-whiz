@@ -2,14 +2,14 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useSession, signOut } from "next-auth/react";
-import { AUTH_ROUTES } from "@/routes/routes";
-import { Avatar } from "@nextui-org/react";
+// import { useSession, signOut } from "next-auth/react";
+// import { AUTH_ROUTES } from "@/routes/routes";
+// import { Avatar } from "@nextui-org/react";
 import Logo from "../ui/logo";
 import MenuMobile from "./Navbar-mobile";
 
 export default function NavbarClient() {
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
   const [menuOpen, setMenuOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
 
@@ -22,7 +22,7 @@ export default function NavbarClient() {
   };
 
   return (
-    <nav className="bg-[#070A60] p-4">
+    <nav className="fixed top-0 w-full bg-[#070A60] p-4 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Logo />
 
@@ -78,7 +78,7 @@ export default function NavbarClient() {
               Preguntas Frecuentes
             </Link>
           </li>
-
+{/*           
           {session?.user ? (
             <>
               <div className="relative">
@@ -141,11 +141,10 @@ export default function NavbarClient() {
                 </Link>
               </li>
             </>
-          )}
+          )} */}
         </ul>
       </div>
       {menuOpen && <MenuMobile isOpen={menuOpen} onClose={toggleMenu} />}
     </nav>
   );
 }
-

@@ -39,7 +39,7 @@ const PreguntasFrecuentes: React.FC = () => {
       }}
     >
       <div className="min-h-screen bg-black bg-opacity-70 text-[#BDC7D8]">
-        <div className="container mx-auto py-16 px-4">
+        <div className="container mt-40 mx-auto py-16 px-4">
           <h1 className="text-4xl font-bold text-center mb-6">
             Preguntas Frecuentes
           </h1>
