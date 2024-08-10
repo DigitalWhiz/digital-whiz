@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@layer utilities {
+    .text-shadow-lg {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajusta los valores para cambiar la sombra */
+    }
+  }
+  
+
+
+.card-shadow {
+  box-shadow: 50px 30px 50px rgba(0, 0, 0, 0.8);
+}

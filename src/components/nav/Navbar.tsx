@@ -7,6 +7,7 @@ import Link from "next/link";
 // import { Avatar } from "@nextui-org/react";
 import Logo from "../ui/logo";
 import MenuMobile from "./Navbar-mobile";
+import { TitleLogo } from "../ui/typography/TitleLogo";
 
 export default function NavbarClient() {
   // const { data: session } = useSession();
@@ -22,9 +23,14 @@ export default function NavbarClient() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-[#070A60] p-4 z-50">
+    <nav className="fixed top-0 w-full bg-[#070A60]/90 p-7 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Logo />
+        <TitleLogo
+          title="Whiz"
+          caption="Digital"
+          className="my-4"
+        />
 
         <button className="lg:hidden" onClick={toggleMenu}>
           <svg
@@ -41,44 +47,50 @@ export default function NavbarClient() {
           </svg>
         </button>
 
-        <ul className="hidden lg:flex items-center gap-4">
+        <ul className="hidden lg:flex items-center gap-1 flex-wrap">
           <li>
             <Link
               href="/"
-              className="py-2 px-4 text-gray-400 border-b-2 border-primary transition-colors duration-300 hover:text-white hover:border-accent"
-              >
+              className="py-2 px-2 text-gray-400 border-b-2 border-primary transition-colors duration-300 hover:text-white hover:border-accent">
               Inicio
             </Link>
           </li>
           <li>
             <Link
               href="/#servicios"
-              className="py-2 px-4 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
+              className="py-2 px-2 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
               Nuestros Servicios
             </Link>
           </li>
           <li>
             <Link
+              href="/#planes"
+              className="py-2 px-2 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
+              Planes
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/#contactanos"
-              className="py-2 px-4 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
+              className="py-2 px-2 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
               Contactanos
             </Link>
           </li>
           <li>
             <Link
               href="/#sobreNosotros"
-              className="py-2 px-4 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
+              className="py-2 px-2 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
               Sobre Nosotros
             </Link>
           </li>
           <li>
             <Link
-              href='/preguntas'
-              className="py-2 px-4 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
+              href="/preguntas"
+              className="py-2 px-2 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
               Preguntas Frecuentes
             </Link>
           </li>
-{/*           
+          {/*           
           {session?.user ? (
             <>
               <div className="relative">

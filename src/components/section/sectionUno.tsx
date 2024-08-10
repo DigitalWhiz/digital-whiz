@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { Title, TitleLogo } from "../ui/typography/TitleLogo";
 
 export default function SectionUno() {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center mt-24 py-24 md:py-0">
+    <section className="relative w-full h-screen flex items-center justify-center mt-32 py-24 md:py-0">
       <div className="relative w-full h-full flex items-center justify-center">
         <div className="relative w-full h-full lg:justify-end">
           <div className="block lg:hidden relative w-full h-full">
@@ -25,18 +26,17 @@ export default function SectionUno() {
           </div>
         </div>
 
-        <div className="absolute top-0 left-12 p-8 sm:top-4 sm:left-4 sm:p-4">
-          <h1
-            className="text-7xl sm:text-8xl font-extrabold text-[#C327E9] p-2 inline-block"
-            style={{ textShadow: "15px 5px 5px rgba(0,0,0,0.8)" }}>
-            DIGITAL <br /> WHIZ
-          </h1>
-          <p
-            className="text-white mt-1 text-4xl font-bold sm:text-lg sm:mt-2 md:text-3xl ml-4"
-            style={{ textShadow: "0 5px 5px rgba(128,0,128,0.8)" }}>
-            Agencia <br />
-            Marketing Integral
-          </p>
+        <div className="absolute top-0 left-0 sm:left-4 p-8 sm:top-4 sm:p-4 lg:max-w-lg lg:mt-20">
+          <TitleLogo
+            title="Marketing Integral"
+            caption="Agencia de Marketing Digital"
+            className="my-0 md:my-16 lg:my-20"
+            isBlock={true}
+          />
+          <Title
+            title="Trabajamos con los mejores profesionales"
+            className="text-shadow-lg text-xl md:text-xl sm:text-lg"
+          />
         </div>
       </div>
     </section>

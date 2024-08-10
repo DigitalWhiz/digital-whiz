@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <div className="flex gap-4">
       <a
-        className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0 rounded"
+        className="pointer-events-none flex place-items-center gap-1 p-1 lg:pointer-events-auto lg:p-0"
         href="https://www.instagram.com/agencia_digitalwhiz/"
         target="_blank"
         rel="noopener noreferrer"
