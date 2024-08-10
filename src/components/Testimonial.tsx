@@ -109,8 +109,8 @@ const Testimonial: React.FC = () => {
                         className='w-full h-full'
                       />
                     </div>
-                    <div className='img-text absolute bottom-0 left-0 bg-black bg-opacity-50 p-4 text-white w-full'>
-                      <h3 className='text-lg font-semibold'>{user.name}</h3>
+                    <div className='img-text text-center absolute bottom-0 left-0 bg-black bg-opacity-70 p-4 text-white w-full'>
+                      <h3 className='text-lg text-center font-semibold'>{user.name}</h3>
                       <span className='text-sm'>{user.post}</span>
                     </div>
                   </div>

@@ -63,16 +63,16 @@ export const testimonial = [
   {
     id: 1,
     name: "Tuco Rentals",
-    cover: "/img/1.png",
+    cover: "/img/tucorentals.png",
     post: "Gerente ejecutivo",
     desc: "Digital Whiz ha llevado nuestra empresa al siguiente nivel en Miami. Su expertise en marketing digital nos ha ayudado a expandir nuestra clientela y mejorar nuestra presencia en el mercado. ¡Altamente recomendados!",
   },
   {
     id: 2,
     name: "Angela Díaz",
-    cover: "/img/1.png",
-    post: "Dueña - Complejo de cabañas",
-    desc: "Digital Whiz transformó nuestra presencia en línea, atrayendo a más clientes y mejorando nuestras reservas. Su atención al detalle y estrategias efectivas han sido clave para nuestro éxito. ¡Estamos encantados con su trabajo!",
+    cover: "/img/Slider3.png",
+    post: "Dueña - Tienda de Indumentaria",
+    desc: "Digital Whiz transformó nuestra presencia en línea, atrayendo a más clientes y mejorando nuestra marca. Su atención al detalle y estrategias efectivas han sido clave para nuestro éxito. ¡Estamos encantados con su trabajo!",
   },
   {
     id: 3,
@@ -84,7 +84,7 @@ export const testimonial = [
   {
     id: 4,
     name: "Cotillón Libertad",
-    cover: "/img/1.png",
+    cover: "/img/6.png",
     post: "Dueña - Gerente de la empresa",
     desc: "Gracias a Digital Whiz, nuestro negocio ha crecido significativamente. Su enfoque creativo y profesionalismo nos ayudaron a destacarnos en el mercado. ¡Estamos más que satisfechos con los resultados!",
   }

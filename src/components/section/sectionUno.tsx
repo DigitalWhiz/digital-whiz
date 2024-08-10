@@ -35,7 +35,7 @@ export default function SectionUno() {
           />
           <Title
             title="Trabajamos con los mejores profesionales"
-            className="text-shadow-lg text-xl md:text-xl sm:text-lg"
+            className="text-shadow-lg hidden lg:block text-2xl lg:text-3xl mt-10"
           />
         </div>
       </div>
