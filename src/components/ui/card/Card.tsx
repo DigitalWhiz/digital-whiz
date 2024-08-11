@@ -35,7 +35,7 @@ export const Card: React.FC<CardProps> = ({ data, caption, show = false, path = 
       <div className='text-center mt-4 px-4'>
         {path ? (
           <Link href={`${path}/${data.id}`} className='block mb-2 text-lg md:text-xl font-semibold text-gray-800 hover:text-gray-400'>
-            <TitleSm title={data.title} className="text-base md:text-2xl" />
+            <TitleSm title={data.title} className="text-base md:text-2xl mt-8" />
           </Link>
         ) : (
           <TitleSm title={data.title} className="text-base md:text-base text-gray-800 hover:text-gray-400" />

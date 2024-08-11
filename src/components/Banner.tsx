@@ -2,6 +2,7 @@
 
 import React from "react"
 import { Title, TitleLogo, TitleSm } from "./ui/typography/TitleLogo"
+import Link from "next/link"
 
 const Banner = () => {
   return (
@@ -16,9 +17,11 @@ const Banner = () => {
           {/* <TitleLogo title='Let’s take your business to the next level!' /> */}
         </div>
         <div className="text-center">
+          <Link href="https://wa.me/message/XWKCRXJ2NSCII1" target="_blank" rel="noopener noreferrer">
           <button className="bg-[#c05aff] text-white py-2 px-6 rounded-full font-bold shadow-lg hover:bg-[#a64cda] transition">
             Contactarme
           </button>
+          </Link>
         </div>
       </div>
     </section>

@@ -47,7 +47,7 @@ export default function SectionCinco() {
               <FaInstagram size={70} className="text-pink-600" />
             </a>
             <a href="https://wa.me/message/XWKCRXJ2NSCII1" target="_blank" rel="noopener noreferrer" data-aos="fade-up">
-              <FaWhatsapp size={70} className="text-green-600" />
+              <FaWhatsapp size={70} className="text-green" />
             </a>
           </div>
         </div>

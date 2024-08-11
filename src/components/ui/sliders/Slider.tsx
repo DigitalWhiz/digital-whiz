@@ -81,7 +81,7 @@ const Slider: React.FC = () => {
               <div className="absolute inset-x-0 top-1/4 flex flex-col justify-center items-start p-10 pl-24 bg-black bg-opacity-60 text-white rounded-lg">
                 <h2 className="text-3xl font-bold mb-2">{slide.title}</h2>
                 <p className="text-lg">{slide.description}</p>
-                <a href="https://wa.me/message/XWKCRXJ2NSCII1" target="_blank" className="mt-4 px-4 py-2 bg-blue-500 rounded">Consultar</a>
+                <a href="https://wa.me/message/XWKCRXJ2NSCII1" target="_blank" rel="noopener noreferrer" className="mt-4 px-4 py-2 bg-blue-500 rounded">Consultar</a>
               </div>
             </div>
           ))}
