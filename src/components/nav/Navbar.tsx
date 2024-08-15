@@ -64,7 +64,7 @@ export default function NavbarClient() {
           </li>
           <li>
             <Link
-              href="/#planes"
+              href="/planes"
               className="py-2 px-2 border-b-2 text-gray-400 border-transparent transition-colors duration-300 hover:text-white hover:border-accent">
               Planes
             </Link>

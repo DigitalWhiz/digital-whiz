@@ -2,6 +2,7 @@ import { AiOutlineCalendar } from "react-icons/ai"
 import { TfiRulerPencil } from "react-icons/tfi"
 import { VscFileSubmodule } from "react-icons/vsc"
 import { BiUser } from "react-icons/bi"
+import { text } from "stream/consumers"
 
 export const home = [
   {
@@ -59,6 +60,60 @@ export const expertise = [
     desc: [{ text: "Segmentación de lista de contactos" }, { text: "Automatización de correos electrónicos" }, , { text: "Diseño y redacción de correos electrónicos" }, { text: "Pruebas A/B" }],
   },
 ]
+
+export const plans = [
+  {
+    id: 0,
+    title: "Plan 0",
+    price: "$229.000" + " " + "+" + " " + "99.000" + " " + "Adicional si se deben crear las cuentas desde cero.",
+    cover: "/img/Plan0.png",
+  },
+  {
+    id: 1,
+    title: "Plan 1",
+    price: "$229.900",
+    cover: "/img/Plan1.png",
+  },
+  {
+    id: 2,
+    title: "Plan 2",
+    price: "$279.900",
+    cover: "/img/Plan2.png",
+  },
+  {
+    id: 3,
+    title: "Plan 3",
+    price: "$279.900" + " " + "+" + " " + "Diseño Web (Ver plan seis)",
+    cover: "/img/Plan3.png",
+  },
+  {
+    id: 4,
+    title: "Plan 4",
+    price: "$229.000" + " " + "+" + " " + "160.000 Identidad de Marca",
+    cover: "/img/Plan4.png",
+  },
+  {
+    id: 5,
+    title: "Plan 5",
+    price: "$200 dolares." + " " + "Pago único",
+    cover: "/img/Plan5.png",
+  },
+  {
+    id: 6,
+    title: "Plan 6",
+    price: "$200 dolares" + " " + "+" + " " +"90 dolares mensual",
+    cover: "/img/Plan6.png",
+  },
+  {
+    id: 7,
+    title: "Plan 7",
+    price: "$500 dolares" + " " + "+" + " " +"250 dolares mensual",
+    cover: "/img/Plan7.png",
+  },
+];
+
+
+
 export const testimonial = [
   {
     id: 1,
