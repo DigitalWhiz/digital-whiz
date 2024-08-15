@@ -75,6 +75,7 @@ const Slider: React.FC = () => {
                 src={slide.imageUrl}
                 alt={slide.title}
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="rounded-lg"
                 style={{ objectFit: 'cover', objectPosition: 'center' }}
               />

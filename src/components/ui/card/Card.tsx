@@ -22,8 +22,8 @@ interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ data, caption, show = false, path = "" }) => {
   return (
-    <div className={`flex flex-col items-center mx-auto max-w-[300px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[360px]`}>
-      <div className='relative w-full h-[240px] sm:h-[240px] md:h-[240px] lg:h-[350px]'>
+    <div className={`flex flex-col items-center mx-auto max-w-[500px] sm:max-w-[300px] md:max-w-[340px] lg:max-w-[360px]`}>
+      <div className='relative w-full h-[450px] sm:h-[240px] md:h-[240px] lg:h-[350px]'>
         <Image
           src={data.cover}
           alt={data.title}

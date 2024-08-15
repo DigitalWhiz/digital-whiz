@@ -30,7 +30,7 @@ export default function SectionUno() {
           <TitleLogo
             title="Marketing Integral"
             caption="Agencia de Marketing Digital"
-            className="my-0 md:my-16 lg:my-20"
+            className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl my-2 md:my-16 lg:my-20"
             isBlock={true}
           />
           <Title

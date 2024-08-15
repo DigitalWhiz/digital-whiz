@@ -23,13 +23,13 @@ export default function NavbarClient() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-[#070A60]/90 p-7 z-50">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="fixed top-0 w-full bg-[#070A60]/90 p-5 z-50">
+      <div className="container gap-4 mx-auto flex flex-row justify-between items-center">
         <Logo />
         <TitleLogo
           title="Whiz"
           caption="Digital"
-          className="my-4"
+          className="my-2"
         />
 
         <button className="lg:hidden" onClick={toggleMenu}>
