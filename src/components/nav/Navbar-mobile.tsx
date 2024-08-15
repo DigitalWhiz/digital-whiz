@@ -66,7 +66,7 @@ const MenuMobile: FC<MenuMobileProps> = ({ isOpen, onClose }) => {
             </li>
             <li>
               <Link
-                href="/#planes"
+                href="/planes"
                 className="block w-full py-3 px-4 text-gray-400 border-b border-transparent hover:border-accent text-center transition-colors duration-300"
                 onClick={onClose}
               >

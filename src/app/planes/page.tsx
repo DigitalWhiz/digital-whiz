@@ -71,7 +71,11 @@ const Planes: React.FC = () => {
               <div className="w-full sm:w-1/2 px-4 text-center sm:text-left">
                 <div className="titleSm mb-2">
                   <Title title={plan.title} className="text-shadow-lg mb-2" />
-                  <Title title={plan.price} className="text-shadow-lg mb-2" />
+                  {/* Aquí ajustas el tamaño del texto del precio según la pantalla */}
+                  <Title 
+                    title={plan.price} 
+                    className="text-2xl sm:text-2xl lg:text-2xl text-shadow-lg mb-2" 
+                  />
                 </div>
               </div>
             </div>
