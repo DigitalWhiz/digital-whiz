@@ -79,7 +79,7 @@ const Planes: React.FC = () => {
         </div>
 
         {/* Sección de las dos imágenes abajo de los planes */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 my-10">
+        {/* <div className="flex flex-col sm:flex-row justify-center gap-4 my-10">
           <div className="w-full sm:w-1/2">
             <Image
               src="/img/PreciosPlan1.png"
@@ -98,7 +98,7 @@ const Planes: React.FC = () => {
               className="w-full h-auto object-cover rounded-xl"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
